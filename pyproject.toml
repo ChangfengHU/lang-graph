@@ -1,0 +1,20 @@
+[project]
+name = "langgraph-course"
+version = "0.1.0"
+description = "A runnable Chinese LangGraph learning path from beginner to production patterns."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "grandalf>=0.8",
+    "langgraph>=1.0.0",
+    "typing-extensions>=4.12.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
